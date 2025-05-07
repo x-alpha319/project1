@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.container2{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ } 
+ .img1{
+  margin-left: none;
+ }
+ .img4{
+    width: 100px;
+ }
+ li{
+    list-style-type: none;
+ }
+
+ input{
+  border-radius: 20px;
+  width: 400px;
+  padding: 10px;
+  outline: none;
+ }
+ body{
+  margin: 20px;
+ }
