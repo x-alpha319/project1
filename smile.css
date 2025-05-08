@@ -117,6 +117,10 @@ p{
         margin-right: auto;
         display: block;
     }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .img2{
