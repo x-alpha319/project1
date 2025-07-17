@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asana Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-sans text-gray-800">
+    <marquee behavior="" direction=""
+      ><h1>
+        “CAVEAT: This is a student's project and not an attempt to clone the
+        existing webpage.”
+      </h1></marquee
+    >
+    <nav class="flex justify-between items-center p-4 border-b relative">
+      <!-- Left: Logo & Nav Links -->
+      <div class="flex items-center space-x-3">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/8/89/Asana_logo.png"
+          alt="Asana Logo"
+          class="h-6"
+        />
+
+        <!-- Desktop Menu -->
+        <ul id="nav-links" class="hidden md:flex space-x-6 text-sm font-medium">
+          <li><a href="index.html" class="hover:underline">Smile</a></li>
+          <li>
+            <a href="file_upload.html" class="hover:underline">Solutions</a>
+          </li>
+          <li><a href="GO54.html" class="hover:underline">GO54</a></li>
+          <li><a href="nolo.html" class="hover:underline">Nolo</a></li>
+          <li><a href="#" class="hover:underline">Pricing</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Actions -->
+      <div class="hidden md:flex items-center space-x-4 text-sm font-medium">
+        <a href="#" class="hover:underline">Contact sales</a>
+        <a href="#" class="hover:underline">Log in</a>
+        <button class="bg-purple-700 text-white px-4 py-2 rounded">
+          Get Asana
+        </button>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="focus:outline-none">
+          <!-- Hamburger Icon -->
+          <svg
+            class="w-6 h-6 text-gray-800"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu (initially hidden) -->
+      <div
+        id="mobile-menu"
+        class="absolute top-full left-0 w-full bg-white shadow-md border-t hidden md:hidden"
+      >
+        <ul class="flex flex-col text-sm font-medium p-4 space-y-3">
+          <li><a href="index.html" class="hover:underline">Smile</a></li>
+          <li>
+            <a href="file_upload.html" class="hover:underline">Solutions</a>
+          </li>
+          <li><a href="GO54.html" class="hover:underline">GO54</a></li>
+          <li><a href="nolo.html" class="hover:underline">Nolo</a></li>
+          <li><a href="#" class="hover:underline">Pricing</a></li>
+          <li><a href="#" class="hover:underline">Contact sales</a></li>
+          <li><a href="#" class="hover:underline">Log in</a></li>
+          <li>
+            <button class="bg-purple-700 text-white px-4 py-2 rounded w-full">
+              Get Asana
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-[#fff4f4] text-center py-20 px-4">
+      <h1 class="text-4xl md:text-5xl font-bold max-w-3xl mx-auto">
+        Where your teams and AI coordinate work together
+      </h1>
+      <p class="text-lg mt-4 max-w-xl mx-auto">
+        See how your work connects to goals while working alongside AI that
+        understands your business.
+      </p>
+      <div class="mt-6 space-x-4">
+        <button class="bg-purple-700 text-white px-6 py-3 rounded font-medium">
+          Get started
+        </button>
+        <button
+          class="border border-purple-700 text-purple-700 px-6 py-3 rounded font-medium"
+        >
+          See how it works
+        </button>
+      </div>
+      <!-- Replace with real image -->
+      <div class="mt-10 max-w-5xl mx-auto">
+        <video
+          class="w-full max-w-4xl h-auto rounded-lg shadow"
+          autoplay
+          muted
+          loop
+          controls
+        >
+          <source
+            src="[AI26]FY26 Q2 Product Launch HomePage Header v3.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- Trusted by Section -->
+    <section class="py-8 text-center">
+      <div class="mt-4 flex flex-wrap justify-center items-center gap-10">
+        <p class="text-lg text-black">
+          <strong
+            >95% of Fortune 100 companies <br />
+            choose Asana</strong
+          ><sup>®</sup>
+        </p>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+          class="h-6"
+        />
+        <img src="images/accenture" class="h-30 w-[120px]" />
+        <img src="images/JJ" class="h-30 w-[120px]" />
+        <img src="images/dell" class="h-30 w-[120px]" />
+        <img src="images/merck" class="h-30 w-[120px]" />
+      </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="py-12 px-4">
+      <h2 class="text-2xl font-semibold text-center mb-10">
+        See how Asana keeps work moving across use cases
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        <div class="border rounded-lg p-6 hover:shadow transition">
+          <h3 class="font-semibold text-lg mb-2">📁 Campaign management</h3>
+          <p class="text-sm text-gray-600 mb-2">
+            Plan, track, and complete your campaigns — all in one place.
+          </p>
+          <a href="#" class="text-purple-700 font-medium"
+            >See campaign management →</a
+          >
+        </div>
+        <div class="border rounded-lg p-6 hover:shadow transition">
+          <h3 class="font-semibold text-lg mb-2">🎨 Creative production</h3>
+          <p class="text-sm text-gray-600 mb-2">
+            Accelerate creative work by automating workflows from start to
+            finish.
+          </p>
+          <a href="#" class="text-purple-700 font-medium"
+            >See creative production →</a
+          >
+        </div>
+        <div class="border rounded-lg p-6 hover:shadow transition">
+          <h3 class="font-semibold text-lg mb-2">📁 Campaign management</h3>
+          <p class="text-sm text-gray-600 mb-2">
+            Plan, track, and complete your campaigns — all in one place.
+          </p>
+          <a href="#" class="text-purple-700 font-medium"
+            >See campaign management →</a
+          >
+        </div>
+        <div class="border rounded-lg p-6 hover:shadow transition">
+          <h3 class="font-semibold text-lg mb-2">🎨 Creative production</h3>
+          <p class="text-sm text-gray-600 mb-2">
+            Accelerate creative work by automating workflows from start to
+            finish.
+          </p>
+          <a href="#" class="text-purple-700 font-medium"
+            >See creative production →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- What Sets Asana Apart -->
+    <section class="bg-blue-100 py-16 px-4">
+      <h2 class="text-2xl font-semibold text-center mb-10">
+        What sets Asana apart
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+        <div class="bg-white rounded-xl p-3 shadow">
+          <h3 class="font-semibold text-xl mb-40">
+            More clarity and accountability
+          </h3>
+          <p class="text-sm text-gray-600 mb-4 mt-10">
+            Connect strategic goals to the work that helps achieve them. Make
+            sure your team always knows who’s doing what, by when.
+          </p>
+          <a href="#" class="text-purple-700 font-medium"
+            >Learn about goals →</a
+          >
+        </div>
+        <div class="bg-indigo-700 text-white rounded-xl p-3 shadow">
+          <h3 class="font-semibold text-xl mb-2">
+            Amplify your impact with AI
+          </h3>
+          <p class="text-sm mb-4">
+            Let Asana AI handle routine work, so your team can focus on big
+            goals.
+          </p>
+          <img
+            src="images/WEB-homepage-AI-en_us.webp"
+            alt=""
+            class="ml-30 w-[300px]"
+          />
+          <a href="#" class="underline text-white">Meet Asana AI →</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div>
+        <div>
+          <marquee behavior="" direction="right">
+            <div class="flex gap-6 max-w-6xl mx-auto">
+              <div
+                class="bg-white rounded-xl py-10 px-5 shadow-md border border-black-700"
+              >
+                <img
+                  src="images/Microsoft_Outlook-Logo.wine.png"
+                  alt=""
+                  class="w-[150px]"
+                />
+              </div>
+              <div
+                class="bg-white rounded-xl py-10 px-5 shadow-md border border-black-700"
+              >
+                <img
+                  src="images/Microsoft_Outlook-Logo.wine.png"
+                  alt=""
+                  class="w-[150px]"
+                />
+              </div>
+              <div
+                class="bg-white rounded-xl py-10 px-5 shadow-md border border-black-700"
+              >
+                <img
+                  src="images/Microsoft_Outlook-Logo.wine.png"
+                  alt=""
+                  class="w-[150px]"
+                />
+              </div>
+              <div
+                class="bg-white rounded-xl py-10 px-5 shadow-md border border-black-700"
+              >
+                <img
+                  src="images/Microsoft_Outlook-Logo.wine.png"
+                  alt=""
+                  class="w-[150px]"
+                />
+              </div>
+              <div
+                class="bg-white rounded-xl py-10 px-5 shadow-md border border-black-700"
+              >
+                <img
+                  src="images/Microsoft_Outlook-Logo.wine.png"
+                  alt=""
+                  class="w-[150px]"
+                />
+              </div>
+            </div>
+          </marquee>
+        </div>
+        <div>
+          <br />
+          <marquee behavior="" direction="left">
+            <div class="flex gap-6 max-w-6xl mx-auto">
+              <div
+                class="bg-white rounded-xl py-10 px-5 shadow-md border border-black-700"
+              >
+                <img
+                  src="images/Microsoft_Outlook-Logo.wine.png"
+                  alt=""
+                  class="w-[150px]"
+                />
+              </div>
+              <div
+                class="bg-white rounded-xl py-10 px-5 shadow-md border border-black-700"
+              >
+                <img
+                  src="images/Microsoft_Outlook-Logo.wine.png"
+                  alt=""
+                  class="w-[150px]"
+                />
+              </div>
+              <div
+                class="bg-white rounded-xl py-10 px-5 shadow-md border border-black-700"
+              >
+                <img
+                  src="images/Microsoft_Outlook-Logo.wine.png"
+                  alt=""
+                  class="w-[150px]"
+                />
+              </div>
+              <div
+                class="bg-white rounded-xl py-10 px-5 shadow-md border border-black-700"
+              >
+                <img
+                  src="images/Microsoft_Outlook-Logo.wine.png"
+                  alt=""
+                  class="w-[150px]"
+                />
+              </div>
+              <div
+                class="bg-white rounded-xl py-10 px-5 shadow-md border border-black-700"
+              >
+                <img
+                  src="images/Microsoft_Outlook-Logo.wine.png"
+                  alt=""
+                  class="w-[150px]"
+                />
+              </div>
+            </div>
+          </marquee>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-gray-100 grid grid-cols-1 lg:grid-cols-2 px-4 gap-6 p-16"
+    >
+      <div>
+        <h2 class="text-4xl font-bold">Get Started Easily</h2>
+        <p class="">
+          Tour the platform, read a few deep dives, or kickstart your <br />
+          work management journey with the right template.
+        </p>
+      </div>
+      <div class="w-full max-w-xl space-y-4">
+        <!-- Card 1 -->
+        <div
+          class="flex justify-between items-center bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition cursor-pointer"
+        >
+          <div>
+            <h3 class="text-lg font-semibold">Try the Asana demo</h3>
+            <p class="text-sm text-gray-500">See Asana in action</p>
+          </div>
+          <div
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-black text-white"
+          >
+            →
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="flex justify-between items-center bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition cursor-pointer"
+        >
+          <div>
+            <h3 class="text-lg font-semibold">Discover resources</h3>
+            <p class="text-sm text-gray-500">Help articles and tutorials</p>
+          </div>
+          <div
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-black text-white"
+          >
+            →
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="flex justify-between items-center bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition cursor-pointer"
+        >
+          <div>
+            <h3 class="text-lg font-semibold">Start with a template</h3>
+            <p class="text-sm text-gray-500">
+              Get started faster with a template
+            </p>
+          </div>
+          <div
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-black text-white"
+          >
+            →
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 p-10">
+        <div>
+          <img src="images/Gartner.webp" alt="" class="w-[400px] rounded" />
+          <p>
+            A Leader in the Gartner Magic Quadrant <br />
+            for Collaborative Work Management² two years in a row
+          </p>
+          <div class="flex py-3 gap-1">
+            <p class="font-bold">Get Report</p>
+            <p
+              class="w-5 h-5 flex items-center justify-center rounded-full bg-black text-white"
+            >
+              →
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="images/WEB-PNG_Asana-Forrester-Wave-Resource-Card-600x400.webp"
+            alt=""
+            class="w-[400px] rounded"
+          />
+          <p>
+            A Leader in the The Forrester Wave™: Collaborative Work <br />
+            Management Tools Report³
+          </p>
+          <div class="flex py-3 gap-1">
+            <p class="font-bold">Get Report</p>
+            <p
+              class="w-5 h-5 flex items-center justify-center rounded-full bg-black text-white"
+            >
+              →
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="images/Gartner-Announcement_APMR.webp"
+            alt=""
+            class="w-[400px] rounded"
+          />
+          <p>
+            A Leader in the 2024 Gartner® Magic Quadrant™ for <br />
+            Adaptive Project Management and Reporting (APMR)
+          </p>
+          <div class="flex py-3 gap-1">
+            <p class="font-bold">Get Report</p>
+            <p
+              class="w-5 h-5 flex items-center justify-center rounded-full bg-black text-white"
+            >
+              →
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer CTA Section -->
+    <section class="bg-[#500030] text-white text-center py-20 px-4">
+      <h2 class="text-3xl md:text-4xl font-bold max-w-3xl mx-auto">
+        The only platform that can support your company at any scale
+      </h2>
+      <button
+        class="mt-6 bg-white text-[#500030] font-semibold px-6 py-3 rounded-full"
+      >
+        Get started
+      </button>
+
+      <!-- Legal Notes -->
+      <div
+        class="text-xs text-gray-200 mt-10 max-w-4xl mx-auto space-y-2 leading-snug"
+      >
+        <p>1. Accurate as of December 2023, includes free and paid users.</p>
+        <p>
+          2. See the 2024 Gartner® Magic Quadrant™ for Collaborative Work
+          Management (CWM). GARTNER is a registered trademark...
+        </p>
+        <p>
+          3. See The Forrester Wave™: Collaborative Work Management Tools, Q4
+          2022 report...
+        </p>
+        <p>
+          4. IDC MarketScape: Worldwide Collaborative Work Management 2023–2024
+          Vendor Assessment...
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer Links -->
+    <footer class="bg-[#500030] text-white border-t border-[#6a2c43]">
+      <div
+        class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-5 gap-6 text-sm"
+      >
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/89/Asana_logo.png"
+            alt="Asana Logo"
+            class="h-5 mb-4"
+          />
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-2">New to Asana?</h4>
+          <ul class="space-y-1 text-gray-300">
+            <li><a href="#">Product overview</a></li>
+            <li><a href="#">All features</a></li>
+            <li><a href="#">Latest release</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Start trial</a></li>
+            <li><a href="#">Advanced</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">App integrations</a></li>
+            <li><a href="#">AI work management</a></li>
+            <li><a href="#">Resource management</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-2">Use cases</h4>
+          <ul class="space-y-1 text-gray-300">
+            <li><a href="#">Campaign management</a></li>
+            <li><a href="#">Content calendar</a></li>
+            <li><a href="#">Creative production</a></li>
+            <li><a href="#">IT</a></li>
+            <li><a href="#">OKRs</a></li>
+            <li><a href="#">Product launches</a></li>
+            <li><a href="#">Sprint planning</a></li>
+            <li><a href="#">All use cases</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-2">Resources</h4>
+          <ul class="space-y-1 text-gray-300">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Get support</a></li>
+            <li><a href="#">Asana Academy</a></li>
+            <li><a href="#">Certifications</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Project templates</a></li>
+            <li><a href="#">Developers and API</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-2">Company</h4>
+          <ul class="space-y-1 text-gray-300">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Leadership</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Inside Asana</a></li>
+            <li><a href="#">Diversity</a></li>
+            <li><a href="#">Investor relations</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div
+        class="border-t border-[#6a2c43] py-4 px-6 text-sm text-center flex flex-col md:flex-row justify-between items-center"
+      >
+        <p class="text-gray-400">&copy; 2025 Asana Clone</p>
+        <div class="flex space-x-4 mt-2 md:mt-0">
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+              class="h-4"
+              alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+              class="h-4"
+              alt="LinkedIn"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/733/733635.png"
+              class="h-4"
+              alt="Twitter"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+              class="h-4"
+              alt="YouTube"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const toggleBtn = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      toggleBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

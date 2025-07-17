@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #0f62fe;
+  /* background: #0f62fe; */
 }
 
 .custom-navbar {
@@ -151,6 +151,9 @@ body {
 .logos img {
   margin: 1rem;
 }
+.mid_logo{
+  text-align: center;
+}
 
 .testimonial {
   display: flex;
@@ -215,7 +218,7 @@ body {
 }
 
 .inp2 {
-  margin-left: 100px;
+  gap: 100px;
   /* align-items: flex-end; */
 }
 

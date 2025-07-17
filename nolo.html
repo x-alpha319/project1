@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nolo Clone</title>
+    <link rel="stylesheet" href="nolo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="body-sm">
+    <marquee behavior="" direction="">
+        <h1>“CAVEAT: This is a student's project and not an attempt to clone the existing webpage.”</h1>
+    </marquee>
+    <!-- Header & Navigation -->
+    <header>
+        <!-- Logo and Navigation Links -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#">Nolo</a>
+            
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Dropdown menu item -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="legalIssuesDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Legal Issues Explained
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="legalIssuesDropdown">
+                            <div>
+                              <li><h6 class="dropdown-header">Injuries And Illness</h6></li>
+                              <li><a class="dropdown-item" href="#">Accidents and injuries</a></li>
+                              <li><a class="dropdown-item" href="#">Car accident</a></li>
+                              <li><a class="dropdown-item" href="#">Disability law</a></li>
+                              <li><a class="dropdown-item" href="#">Worker's compensation</a></li>
+                            </div>
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            
+                            <li><h6 class="dropdown-header">Criminal And Traffic</h6></li>
+                            <li><a class="dropdown-item" href="#">Criminal law</a></li>
+                            <li><a class="dropdown-item" href="#">DUI/DWI & traffic tickets</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Legal Topics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Asana.html">Lawyers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="GO54.html">Forms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="file_upload.html">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Software</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+                
+                <!-- Search form -->
+                <!-- <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Main Headline and Subheading -->
+        <div class="text_style">
+            <div class="testimonial-header">
+                <h1>In Nolo you <br> can trust.</h1>
+                <img src="images/" alt="">
+                <p>Giving everyday people the tools to <br> solve their legal issues since 1971</p>
+                <a href="#" class="explore-btn">Explore Your Legal Issue</a>
+            </div>
+
+            
+
+            <div class="testimonials-section">
+                <h2>Find a Lawyer</h2>
+                <div class="testimonial-grid">
+                    <div>
+                        <div class="testimonial" style="background-color: #2F2F2F;">
+                            <p style="color: white;">Nolo publications ... <br>
+                                guide people simply <br>
+                                through the how, <br>
+                                when, where and why <br>
+                                of the law.
+                            </p>
+                            <div class="testimonial-author" style="color: white;">Dr. Washington Jost</div>
+                        </div>
+
+                        <div class="testimonial" style="background-color: #d43900;">
+                            <p style="color: white;">The most prominent <br>U.S.
+                                publisher of <br>self-help <br>
+                                legal aids.</p>
+                            <div class="testimonial-author" style="color: white;">TIME</div>
+                        </div>
+
+                        <div class="testimonial" style="background-color: #2F2F2F;">
+                            <p style="color: white;">Nolo is a pioneer <br> in both
+                                consumer and <br> business
+                                self-help books <br> and software.</p>
+                            <div class="testimonial-author" style="color: white;">Eric Aquino Glaser</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="testimonial" style="background-color: #398bb9">
+                            <p style="color: white;">Nolo's material is
+                                <br>developed by <br>
+                                experienced attorneys <br>
+                                who have access for <br>
+                                making complicated <br>
+                                material accessible.
+                            </p>
+                            <div class="testimonial-author" style="color: white;">Mike</div>
+                        </div>
+
+                        <div class="testimonial" style="background-color: #398bb9;">
+                            <p style="color: white;">When it comes to <br>
+                                self-help legal stuff <br>,
+                                nobody does a better <br>
+                                job than Nolo.</p>
+                            <div class="testimonial-author" style="color: white;">USA TODAY</div>
+                        </div>
+
+                        <div class="testimonial" style="background-color: #d43900;">
+                            <p style="color: white;">Nolo is always <br> there in
+                                a jam as the <br> nation's
+                                publisher of <br>
+                                do-it-yourself-legal <br>
+                                books.</p>
+                            <div class="testimonial-author" style="color: white;">Newsweek</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- How We Can Help -->
+    <section class="services">
+        <!-- Legal Issues Explained, Books & DIY Legal Tools, Find a Lawyer -->
+        <div class="service_container-sm">
+            <h2 class="service_header">How We Can Help</h2>
+            <p class="service_header">
+                take advantage of nolo's suite and trusted legal <br>
+                information, from the pioneer in legal self-help
+            </p>
+            <div class="innerdiv-sm">
+                <div>
+                    <p class="bigtext">Legal Issues Explained</p>
+                    <p class="textarea">break through the legalese with our extensive library
+                        of <br> free articles, written in plain english by
+                        legal experts </p><br><br>
+                    <button class="hyperlnk">see all legal issues</button>
+                </div>
+                <div class="listdiv">
+                    <div>
+                        <img src="" alt="logo"><a href="#" class="legalist">car accidents</a><br><br></img>
+                        <img src="" alt="logo"><a href="#" class="legalist">criminal law</a><br><br></img>
+                        <img src="" alt="logo"><a href="#" class="legalist">accidents</a><br><br></img>
+                    </div>
+                    <div>
+                        <img src="" alt="logo"><a href="#" class="legalist">employment law</a><br><br></img>
+                        <img src="" alt="logo"><a href="#" class="legalist">worker's compensation</a><br><br></img>
+                        <img src="" alt="logo"><a href="#" class="legalist">divorce</a><br><br></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service_container-sm">
+            <div class="innerdiv-sm">
+                <div>
+                    <p class="bigtext">Books & DIY Legal Tools</p>
+                    <p class="textarea">Sidestep the lawyers with do-it-yourself <br>
+                        books, documents, and software. <br> </p> <br><br>
+                    <button class="hyperlnk">See All Books & Tools </button> <br><br>
+                    <img src="images/nolo-trustpilot.webp" alt="" style="max-width: 150px;">
+                </div>
+                <div class="img1">
+                   <!-- <img src="MD24_SALE.jpg" alt="" class="img_style"> -->
+                   <img src="images/home-buying.webp" alt="" class="img_style">
+                 <img src="images/llc-formation.webp" alt="" class="img_style"> 
+                </div>
+            </div>
+        </div>
+        <div class="service_container-sm">
+            <div class="innerdiv-sm">
+                <div>
+                    <p class="bigtext">Find a Lawyer</p>
+                    <p class="textarea">Search for and connect with attorneys in <br>
+                         your area for consultation
+                        and one-on- <br> one legal help <br> </p> <br><br>
+                    <button class="hyperlnk">Find a Lawyer</button>
+                </div>
+                <div>
+                   <img src="images/find-a-lawyer.webp" alt="" class="img_style">
+                </div>
+            </div>
+            <h2 style="color: white;">
+            Throughout our history, the goal has been clear: Give people
+            good information and let them make their own choices.
+           </h2>
+        </div>
+    </section>
+
+    <!-- Our History -->
+    <section class="history">
+        <h1 style="text-align: center; margin-top: 40px;">Our History</h1>
+        <div class="timeline-cont">
+            <div class="timelne">
+
+                <!-- 1960s Section -->
+                <div class="section right">
+                    <div class="image">
+                        <img src="images/nolo-1960s.webp" alt="">
+                    </div>
+                    <div class="dot"></div>
+                    <div class="text">
+                        <h2>1960s</h2>
+                        <p>
+                            Nolo was born of the frustration of two legal aid lawyers who were working to help
+                            low-income
+                            families in the San Francisco Bay area in the late 1960s. They found there was no way to
+                            help all
+                            the working people who didn’t qualify for free legal aid yet couldn’t afford lawyers.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 1970s Section -->
+                <div class="section left">
+                    <div class="text">
+                        <h2>1970s</h2>
+                        <p>
+                            In 1971, to help fill the need they had identified, Charles Sherman wrote a book about doing
+                            your
+                            own divorce and Ralph Warner authored one on tenants’ rights. They took the books to
+                            established
+                            publishers, who promptly rejected them. Warner and Sherman decided they had no alternative
+                            but to
+                            publish the books themselves—and so Nolo Press was created.
+                        </p>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="image">
+                        <img src="nolo-1970s.webp" alt="">
+                    </div>
+                </div>
+                    <div class="section right">
+                        <div class="image">
+                            <img src="nolo-1980s.webp" alt="">
+                        </div>
+                        <div class="dot"></div>
+                        <div class="text">
+                            <h2>1980s</h2>
+                            <p>
+                                By the early 1980s Nolo was publishing books covering just about all areas of law,
+                                empowering everyday people to take control of their legal situations. As the
+                                decade progressed, Nolo started publishing do-it-yourself legal software, including
+                                <i>Quicken WillMaker.</i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="section left">
+                        <div class="text">
+                            <h2>1990s</h2>
+                            <p>
+                               In 1994, Nolo created one of the first consumer-oriented legal websites, offering
+                               tons of free legal information. the company later added online document preparation and
+                               downloadable versions of Nolo books and software.
+                            </p>
+                        </div>
+                        <div class="dot"></div>
+                        <div class="image">
+                            <img src="nolo-1990s.webp" alt="">
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Timeline with images and descriptions -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-body">
+            <div class="footer-top">
+                <!-- Brand Section -->
+                <div class="footer-brand">
+                    <img src="" alt="Nolo Logo with Badge" />
+                </div>
+        
+                <!-- Footer Links -->
+                <div class="footer-columns">
+                    <div class="footer-column-sm">
+                        <h4>Company Information</h4>
+                        <ul>
+                            <li>About Nolo</li>
+                            <li>Careers</li>
+                            <li>Press Room</li>
+                            <li>Contact Us</li>
+                            <li>Customer Service</li>
+                            <li>Tech Support</li>
+                        </ul>
+                    </div>
+        
+                    <div class="footer-column">
+                        <h4>Products & Services</h4>
+                        <ul>
+                            <li>Books & Software</li>
+                            <li>New Arrivals & Coupons</li>
+                            <li>Bestsellers</li>
+                        </ul>
+                    </div>
+        
+                    <div class="footer-column">
+                        <h4>Lawyer Directory</h4>
+                        <ul>
+                            <li>Grow Your Practice</li>
+                            <li>Find a lawyer</li>
+                            <li>Lawyers by location</li>
+                            <li>Tips on Hiring Lawyers</li>
+                        </ul>
+                    </div>
+        
+                    <div class="footer-column">
+                        <h4>Free Legal Information</h4>
+                        <ul>
+                            <li>Articles</li>
+                            <li>Legal Research</li>
+                            <li>Newest Articles</li>
+                        </ul>
+                    </div>
+        
+                    <div class="footer-column">
+                        <h4>Sales</h4>
+                        <ul>
+                            <li>Affiliates</li>
+                            <li>Library & Trade</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Footer Bottom Text -->
+            <div class="footer-bottom">
+                <p>
+                    Copyright ©2025 MH Sub I, LLC dba Nolo ® Self-help services may not be permitted in all states.
+                    The information provided on this site is not legal advice, does not constitute a lawyer referral service,
+                    and no attorney-client or confidential relationship is or will be formed by use of the site.
+                    The attorney listings on this site are paid attorney advertising. In some states, the information on this
+                    website may be considered a lawyer referral service.
+                    Please reference the Terms of Use and the Supplemental Terms for specific information related to your state.
+                    Your use of this website constitutes acceptance of the Terms of Use, Supplemental Terms, Privacy Policy,
+                    Cookie Policy, and Consumer Health Data Notice.
+                </p>
+            </div>
+        </div>
+        </footer>
+       
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
